@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>支持我 - 赞助页面</title>
+    <style>
+        /* 基础样式 */
+        :root {
+            --bg-color: #f4f7f6;
+            --text-color: #333;
+            --accent-color: #007AFF; /* 蓝色调 */
+            --button-bg: #ffffff;
+            --button-hover: #f0f0f0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 400px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* 头部样式 */
+        .header img {
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+            border: 3px solid #fff;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        .header h1 {
+            font-size: 1.5rem;
+            margin: 15px 0 5px;
+        }
+
+        .header p {
+            font-size: 0.9rem;
+            color: #666;
+            margin-bottom: 30px;
+        }
+
+        /* 链接按钮样式 */
+        .links {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .link-item {
+            display: block;
+            padding: 15px;
+            background-color: var(--button-bg);
+            color: var(--text-color);
+            text-decoration: none;
+            border-radius: 12px;
+            font-weight: 500;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .link-item:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            background-color: var(--button-hover);
+        }
+
+        /* 特殊颜色标记（可选） */
+        .afdian { border-left: 5px solid #946ce6; }
+        .bilibili { border-left: 5px solid #fb7299; }
+        .qr-code { border-left: 5px solid #07c160; }
+
+        /* 页脚 */
+        footer {
+            margin-top: 40px;
+            font-size: 0.8rem;
+            color: #999;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="header">
+        <img src="https://i1.hdslb.com/bfs/face/105362b135b81f79ad72f47db89207da75826fd1.jpg" alt="Avatar">
+        <h1>坐标酱official</h1>
+        <p>喵喵喵？喵喵！！</p>
+    </div>
+
+    <div class="links">
+        <a href="https://afdian.com/a/orguproj" class="link-item afdian" target="_blank">
+            ⚡️ 在“爱发电”上赞助我
+        </a>
+
+        <a href="https://live.bilibili.com/1746702256" class="link-item bilibili" target="_blank">
+            📺 哔哩哔哩直播间
+        </a>
+
+        <a href="/qr.png" class="link-item qr-code" target="_blank">
+            💰 微信 / 支付宝 赞赏
+        </a>
+
+        <a href="https://github.com/orangeZSCB" class="link-item" target="_blank">
+            💻 GitHub 主页
+        </a>
+    </div>
+
+    <footer>
+        © 2026 ORGU Project, Coodinate Project, Orange Studio | Powered by Github Pages
+    </footer>
+</div>
+
+</body>
+</html>
